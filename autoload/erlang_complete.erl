@@ -139,7 +139,7 @@ simplify_return({integer, [{value, Val}], _}) ->
 simplify_return({atom, [{value, Val}], _}) ->
     Val;
 simplify_return({map, _, _}) ->
-    "[]".
+    "[]";
 simplify_return({nil, _, _}) ->
     "[]".
 
